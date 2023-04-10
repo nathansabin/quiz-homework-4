@@ -2,6 +2,17 @@
     text-align: center;
 }
 
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 35vh;
+    border-style: solid black;
+    border-width: 3px;
+}
+
 /* this function adds a text box around the heading */
 .heading {
     height: 150px;
@@ -21,7 +32,7 @@
 
 .quiz-button {
     display: block;
-    height: 30px;
+    height: 60px;
     width: 30%;
     margin: 0 auto;
     background-color: lightblue;
@@ -30,4 +41,28 @@
 
 .timer {
     text-align: right
+}
+
+.score-board{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-box{
+    height: 55px;
+    width: 65px;
+    font-size: 12px;
+    background-color: lightblue;
+    list-style-type: none;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+}
+
+@media screen and (max-height:500px) or (max-width:500px) {
+    li{
+        font-size: 10px
+    }
+    
 }
