@@ -8,6 +8,7 @@ ol {
     justify-content: center;
     align-items: center;
     width: 90%;
+    margin: 0px auto;
     height: 35vh;
     border-style: solid black;
     border-width: 3px;
@@ -24,7 +25,7 @@ ol {
     display: block;
     height: 65px;
     width: 45%;
-    margin: 0 auto;
+    margin: 0px auto;
     background-color: lightblue;
     border-radius: 10px;
     line-height: 250%;
@@ -34,7 +35,7 @@ ol {
     display: block;
     height: 60px;
     width: 30%;
-    margin: 0 auto;
+    margin: 0px auto;
     background-color: lightblue;
     border-radius: 10px;
 }
@@ -48,15 +49,17 @@ ol {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 0px;
 }
 
 .score-box{
     height: 55px;
-    width: 65px;
-    font-size: 12px;
+    width: 90%;
+    font-size: 45px;
     background-color: lightblue;
     list-style-type: none;
     margin-bottom: 10px;
+    margin-left: 0px;
     border: 1px solid grey;
 }
 
