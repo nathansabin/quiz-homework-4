@@ -16,6 +16,8 @@ Not only did I learn a large amount of JS commands; I also learned that if im ev
 ## Usage
 
 Go to this link to see the website
+https://nathansabin.github.io/quiz-homework-4/ 
+https://github.com/nathansabin/quiz-homework-4 
 
 
 ![alt text](assets/Website.png)
@@ -26,5 +28,5 @@ First off, on the homescreen it renders in a start button and a text box. After 
 
 ## Tests
 
-All buttons work, you data will be saved without fail, everything renders in properly.
+All buttons work, your data will be saved without fail, everything renders in properly.
 
