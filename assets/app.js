@@ -1,7 +1,3 @@
-//TODO
-    // make the correct amount add to the database
-    // fix next question
-
 // setting varriables
 var amountCorrect; 
 
@@ -11,6 +7,7 @@ var timer;
 
 var text;
 var questions;
+
 var answer = [];
 var quizAnswers = [];
 var selectedAnswer;
@@ -41,16 +38,6 @@ function nextQuestion(nextSlide, index){
     for (var i = 0; i < quizAnswers.length; i++) {
         questions.children[i].addEventListener("click", function(event) {
         selectedAnswer = event.target;
-
-        // if (selectedAnswer.getAttribute("id") === "correct"){
-        //     amountCorrect++;
-        //     nextSlide()
-        //     }
-        //     else {
-        //         timerSeconds = timerSeconds - 5;
-        //         nextSlide()
-        //         }
-        // })}
         
         if (selectedAnswer == questions.children[index]){
             amountCorrect++;
@@ -95,7 +82,6 @@ function quizOne(){
         questions.appendChild(answer[i]);
     }
 
-    //answer[3].setAttribute("id", "correct");
     document.body.append(questions);
     for (var i = 0; i < quizAnswers.length; i++){
         questions.appendChild(answer[i]);
@@ -116,7 +102,6 @@ function quizTwo(){
         answer[i].textContent = quizAnswers[i];
     }
     
-    // answer[2].setAttribute("id", "correct")
     nextQuestion(quizThree, 2);
 }   
 
@@ -129,8 +114,7 @@ function quizThree(){
     for (var i = 0; i < answer.length; i++){
         answer[i].textContent = quizAnswers[i];
     }
-    
-    //answer[0].setAttribute("id", "correct")
+   
     nextQuestion(scoreboard, 0);
 }
 
